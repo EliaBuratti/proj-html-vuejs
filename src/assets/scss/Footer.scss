@@ -1,0 +1,13 @@
+@use './partials/variable.scss' as *;
+
+/* 
+$ligth: #ffffff;
+$grey-light: #f9f1f2;
+$grey: #f2eef4;
+$grey-dark: #f0edf5;
+$style-color: #55328b;
+*/
+
+h1 {
+    background-color: $grey-light;
+}
