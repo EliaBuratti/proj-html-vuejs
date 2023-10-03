@@ -9,7 +9,7 @@ $style-color: #55328b;
 */
 
 #eb_nav_section {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
@@ -19,7 +19,7 @@ $style-color: #55328b;
     font-size: large;
 
     li {
-        margin: 0.5rem 1.5rem;
+        margin: 0.5rem 0.75rem;
         height: 2rem;
 
         svg {
@@ -44,6 +44,7 @@ $style-color: #55328b;
 
     img {
         max-width: 100%;
+        height: max-content;
     }
 
     .eb_overview {
@@ -88,4 +89,45 @@ $style-color: #55328b;
         }
     }
 
+}
+
+#offers {
+    width: fit-content;
+    position: fixed;
+    z-index: 999;
+    top: 10rem;
+    left: 93%;
+    text-align: center;
+
+    div {
+        cursor: pointer;
+        border-radius: 0.3rem;
+        background-color: $ligth;
+        box-shadow: 0 0 1rem $grey-dark;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+
+        p {
+            margin: 0;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .eb_value,
+        .eb_price {
+            color: $price-color;
+            font-weight: 700;
+        }
+
+        .eb_value {
+            vertical-align: super;
+            font-size: 0.8rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .eb_price {
+            font-size: 1.3rem;
+        }
+
+    }
 }
