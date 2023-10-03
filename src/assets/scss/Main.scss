@@ -31,7 +31,8 @@ $style-color: #55328b;
             font-size: 1.2rem;
         }
 
-        h3 {
+        h3,
+        h4 {
             font-family: 'Roboto Serif', serif;
             font-weight: 800;
             color: $style-color;
@@ -51,6 +52,21 @@ $style-color: #55328b;
                 background-color: $ligth;
                 color: $style-color;
                 border: 1px solid $style-color;
+            }
+        }
+    }
+
+    .eb_find-products {
+
+        .eb_pictures {
+
+            h4 {
+                padding-top: 1rem;
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
             }
         }
     }
@@ -99,6 +115,73 @@ $style-color: #55328b;
 
         img {
             width: 100%;
+        }
+    }
+
+    .eb_bakery-process {
+        color: $ligth;
+        margin-bottom: 3rem;
+
+        .eb_picture {
+            background-image: linear-gradient(to top, black 1rem, black 3rem, rgb(62, 62, 62) 100%, gray 100%);
+
+            img {
+                width: 100%;
+                opacity: 0.5;
+            }
+        }
+
+        .eb_head-card {
+
+            h2 {
+                font-family: 'Roboto Serif', serif;
+                font-weight: 600;
+            }
+
+
+
+            .eb_counter {
+                font-size: 4rem;
+                font-weight: 200;
+            }
+        }
+
+        .eb_description {
+            top: 0;
+            left: 0;
+            padding: 3rem;
+
+            .eb_paragraph {
+
+                h6 {
+                    color: $grey-dark;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .eb_citation {
+            background-color: $grey;
+            color: $grey-dark;
+            padding: 3rem;
+
+            h3 {
+                font-family: 'Roboto Serif', serif;
+                font-weight: 600;
+                color: $style-color;
+                font-size: 1.6rem;
+            }
+
+            p,
+            h6 {
+                font-size: 0.8rem;
+            }
+        }
+
+        #two {
+            img {
+                object-fit: fill;
+            }
         }
     }
 }

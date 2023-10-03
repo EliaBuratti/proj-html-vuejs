@@ -80,14 +80,129 @@ export default {
                     <div class="eb_next">&rsaquo;</div>
 
                     <div class="eb_pictures overflow-x-auto d-flex gap-2">
-                        <div v-for="picture in image.products" class="col-3">
+                        <div v-for="picture in image.products" class="col-3 h-100 text-center">
                             <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+                            <h4>{{ picture.text }}</h4>
+                            <p>{{ picture.price }}</p>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+            <!-- bakery process -->
+
+            <!-- first -->
+            <div class="col-12 eb_bakery-process d-flex" id="one">
+                <div class="col-12 position-relative">
+
+                    <!-- picture -->
+                    <div class="eb_picture">
+                        <img :src="getImagePath('bakery-process-1.jpg')" alt="baking">
+                    </div>
+
+                    <!-- process and description -->
+                    <div class="eb_description position-absolute w-100 h-100 d-flex flex-column justify-content-between">
+
+                        <div class="eb_head-card d-flex justify-content-between align-items-center">
+                            <h2>Tell us what you have in mind</h2>
+
+                            <div class=" ms-auto eb_counter">01</div>
+
+                        </div>
+
+                        <div class="eb_paragraph float-end col-4 ms-auto">
+                            <h6 class=" text-uppercase">manual ingredients selection</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias, officiis nostrum
+                                autem aspernatur tempore odit, delectus et nemo ipsam eos eius obcaecati sit neque,
+                                perferendis veritatis enim est rerum.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- second -->
+            <div class="col-12 eb_bakery-process d-flex" id="two">
+                <div class="col-6 position-relative">
+
+                    <!-- picture -->
+                    <div class="eb_picture">
+                        <img :src="getImagePath('bakery-process-2.jpg')" alt="baking">
+                    </div>
+
+                    <!-- process and description -->
+                    <div class="eb_description position-absolute w-100 h-100 d-flex flex-column justify-content-between">
+
+                        <div class="eb_head-card d-flex justify-content-between align-items-center">
+                            <h2>We Start Baking</h2>
+
+                            <div class=" ms-auto eb_counter">02</div>
+
+                        </div>
+
+                        <div class="eb_paragraph float-end col-8">
+                            <h6 class=" text-uppercase">sweet & delicious</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias, officiis nostrum
+                                autem aspernatur tempore odit, delectus et nemo ipsam eos eius obcaecati sit neque,
+                                perferendis veritatis enim est rerum.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- citazione -->
+                <div class="col-6 ps-5">
+
+                    <div class="eb_citation h-100">
+                        <h6 class=" text-uppercase">dont just take our word for it</h6>
+
+                        <h3 class="py-4">
+                            "Finally found an alternative to the mass produced products. Something that incorporates real
+                            organic
+                            ingradients, nutrient dense wellness while promoting sustainability and activity"
+                        </h3>
+                        <p class=" text-capitalize">rachel cooper, founder</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- third -->
+            <div class="col-12 eb_bakery-process d-flex" id="three">
+                <div class="col-12 position-relative">
+
+                    <!-- picture -->
+                    <div class="eb_picture">
+                        <img :src="getImagePath('bakery-process-3.jpg')" alt="baking">
+                    </div>
+
+                    <!-- process and description -->
+                    <div class="eb_description position-absolute w-100 h-100 d-flex flex-column justify-content-between">
+
+                        <div class="eb_head-card d-flex justify-content-between align-items-center">
+                            <h2>Delivered to your home</h2>
+
+                            <div class=" ms-auto eb_counter">03</div>
+
+                        </div>
+
+                        <div class="eb_paragraph float-end col-4 ">
+                            <h6 class=" text-uppercase">based to order & gift wrapped</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias, officiis nostrum
+                                autem aspernatur tempore odit, delectus et nemo ipsam eos eius obcaecati sit neque,
+                                perferendis veritatis enim est rerum.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>
