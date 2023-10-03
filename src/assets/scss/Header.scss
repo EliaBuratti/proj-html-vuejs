@@ -54,13 +54,14 @@ $style-color: #55328b;
         left: 5%;
         transform: translate(0, -50%);
 
+
         h6,
         p {
             color: $grey-dark;
         }
 
         h6 {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
         }
 
         p {
@@ -96,7 +97,7 @@ $style-color: #55328b;
     position: fixed;
     z-index: 999;
     top: 10rem;
-    left: 93%;
+    left: 95%;
     text-align: center;
 
     div {

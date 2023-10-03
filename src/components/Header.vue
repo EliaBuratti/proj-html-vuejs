@@ -62,13 +62,13 @@ export default {
     <section id="eb_jumbotron">
         <img src="../assets/images/hero-header-bakery.jpg" alt="jubotron image">
 
-        <div class="eb_overview container">
+        <div class="eb_overview">
             <h6 class=" text-uppercase">fresh & tasty bakery every day</h6>
             <h1 class=" text-capitalize">The perfect fresh bread</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus fugiat alias fuga officiis.
             </p>
 
-            <button>Explore our products</button>
+            <button class="mt-2">Explore our products</button>
         </div>
     </section>
 
