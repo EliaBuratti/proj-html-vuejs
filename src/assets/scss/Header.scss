@@ -8,6 +8,32 @@ $grey-dark: #f0edf5;
 $style-color: #55328b;
 */
 
-h1 {
-    background-color: $style-color;
+#eb_nav_section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: large;
+
+    li {
+        margin: 0.5rem 1.5rem;
+        height: 2rem;
+
+        svg {
+            fill: $style-color;
+        }
+
+        a {
+            color: $style-color;
+            padding: 0;
+            padding-bottom: 0.25rem;
+        }
+
+        a:hover {
+            border-bottom: 3px solid $style-color;
+        }
+    }
+
 }
