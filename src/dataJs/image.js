@@ -62,4 +62,21 @@ export default {
         }
 
     ],
+
+    bakery_store: [
+        {
+            img: 'new-york-bk.jpg',
+            title: 'New York',
+            contact: '1.800.548.556',
+            working_time: '9:00 AM - 6:00 PM',
+            location: 'https://www.google.com/maps/search/1484+3rd+Ave,+New+York,+NY+10028,+Stati+Uniti/@40.8067714,-73.9496139,14z/data=!3m1!4b1?entry=ttu',
+        },
+        {
+            img: 'london-bk.jpg',
+            title: 'London',
+            contact: '1.800.548.556',
+            working_time: '9:00 AM - 6:00 PM',
+            location: 'https://www.google.com/maps/place/6+The+Broadway,+London,+Regno+Unito/@51.5784392,-0.1261125,17z/data=!3m1!4b1!4m6!3m5!1s0x48761bc0acb87de3:0xc5daed5f8a8dec0c!8m2!3d51.5784392!4d-0.1235376!16s%2Fg%2F11c3rs_jyd?entry=ttu',
+        },
+    ]
 } 

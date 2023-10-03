@@ -203,6 +203,42 @@ export default {
                 </div>
             </div>
 
+            <!-- visit our baking -->
+            <!-- manca lo sfondooooooooooo****************************************************** -->
+            <div class="col-12 eb_baking eb_store">
+
+                <!-- title -->
+                <div class="col-12 text-center">
+                    <h6 class=" text-uppercase">location</h6>
+                    <h3 class=" text-capitalize pt-3">Visit our Bakeries</h3>
+                </div>
+
+                <!-- picture -->
+                <div class="col-12 d-flex py-5">
+                    <div v-for="picture in image.bakery_store" class="col-6">
+                        <img :src="getImagePath(picture.img)" :alt="picture.text">
+
+                        <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5">
+                            <h3 class="col-12 pb-4">{{ picture.title }}</h3>
+                            <span class="col-4 text-uppercase">
+                                <h5>call us</h5>
+                                <p>{{ picture.contact }}</p>
+                            </span>
+                            <span class="col-4 text-uppercase">
+                                <h5>open all week</h5>
+                                <p>{{ picture.working_time }}</p>
+                            </span>
+                            <span class="col-4">
+                                <a :href="picture.location" target="_blank">
+                                    <button>Wiew Map</button>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>

@@ -142,7 +142,7 @@ $style-color: #55328b;
 
             .eb_counter {
                 font-size: 4rem;
-                font-weight: 200;
+                font-weight: 100;
             }
         }
 
@@ -181,6 +181,32 @@ $style-color: #55328b;
         #two {
             img {
                 object-fit: fill;
+            }
+        }
+    }
+
+    .eb_store {
+
+        h5 {
+            color: $grey-dark;
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        button {
+
+            background-color: $ligth;
+            color: $style-color;
+            font-weight: 600;
+
+            &:hover {
+
+                background-color: $style-color;
+                color: $ligth;
             }
         }
     }
