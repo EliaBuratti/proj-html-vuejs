@@ -11,7 +11,7 @@ export default {
 
     methods: {
         getImagePath(img) {
-            return new URL(`../assets/imgages/${img}`, import.meta.url).href;
+            return new URL(`../assets/images/${img}`, import.meta.url).href;
         }
     },
 
@@ -26,23 +26,39 @@ export default {
             <div class="col-12 eb_our-products d-flex justify-content-between">
                 <div class="col-4">
                     <h6 class=" text-uppercase">our products</h6>
-                    <h3 class=" text-capitalize">all our detectable pastries are backend fresh in our Kitchen very morining,
+                    <h3>all our detectable pastries are backend fresh in our Kitchen very morining,
                         and are made with all-natural, all organic ingrdients.
                     </h3>
 
                     <button class="mt-4">Explore our products</button>
-
                 </div>
-                <div class="col-7 eb_carousel d-flex gap-2"> <!-- da rendere dinamico -->
+                <div class="col-7 eb_carousel"> <!-- da rendere dinamico -->
 
                     <div class="eb_prev">&lsaquo;</div>
                     <div class="eb_next">&rsaquo;</div>
 
-                    <div class="col-6 ">
-                        <img src="../assets/images/choco-chip-cookies.jpg" alt="">
+                    <div class="eb_pictures overflow-x-auto d-flex gap-2">
+                        <div v-for="picture in image.products" class="col-6">
+                            <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+                        </div>
                     </div>
-                    <div class="col-6 ">
-                        <img src="../assets/images/choco-chip-cookies.jpg" alt="">
+                </div>
+            </div>
+
+
+            <!-- baking -->
+            <div class="col-12 eb_baking">
+
+                <!-- title -->
+                <div class="col-12 text-center">
+                    <h6 class=" text-uppercase">corporate & weddings</h6>
+                    <h3 class=" text-capitalize pt-3"> baking special moments</h3>
+                </div>
+
+                <!-- picture -->
+                <div class="col-12 d-flex gap-2 py-5">
+                    <div v-for="picture in image.baking" class="col-6">
+                        <img :src="getImagePath(picture.img)" :alt="picture.text">
                     </div>
                 </div>
             </div>

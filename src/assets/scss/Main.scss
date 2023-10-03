@@ -12,7 +12,8 @@ $style-color: #55328b;
 
     margin: 0 5%;
 
-    .eb_our-products {
+    .eb_our-products,
+    .eb_baking {
 
         margin: 6rem 0;
 
@@ -88,7 +89,14 @@ $style-color: #55328b;
         }
 
         .eb_next {
-            right: -0.5rem;
+            right: 0;
+        }
+    }
+
+    .eb_baking {
+
+        img {
+            width: 100%;
         }
     }
 }
