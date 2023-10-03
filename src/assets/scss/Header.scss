@@ -12,6 +12,7 @@ $style-color: #55328b;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
@@ -33,6 +34,57 @@ $style-color: #55328b;
 
         a:hover {
             border-bottom: 3px solid $style-color;
+        }
+    }
+
+}
+
+#eb_jumbotron {
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    .eb_overview {
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0, -50%);
+
+        h6,
+        p {
+            color: $grey-dark;
+        }
+
+        h6 {
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-family: 'Roboto Serif', serif;
+            font-weight: 800;
+            color: $style-color;
+
+        }
+
+        button {
+            color: $style-color;
+            padding: 0.5rem 1rem;
+            background-color: $ligth;
+            border: none;
+            border-radius: 0.5rem;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $style-color;
+                color: $ligth;
+            }
         }
     }
 

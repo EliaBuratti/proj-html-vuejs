@@ -6,18 +6,22 @@ export default {
 </script>
 
 <template>
-    <section id="eb_nav_section">
+    <div id="eb_nav_section">
         <nav class="navbar navbar-expand-lg bg-transparent">
+
             <div class="container-fluid">
                 <a class="navbar-brand" href="##">
                     <img src="../assets/images/avada-bakery-logo-retina-200x97.png" alt="bakery logo">
                 </a>
+
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-end">
+
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">home</a>
                         </li>
@@ -53,6 +57,20 @@ export default {
                 </div>
             </div>
         </nav>
+    </div>
+
+    <section id="eb_jumbotron">
+        <img src="../assets/images/hero-header-bakery.jpg" alt="jubotron image">
+
+        <div class="eb_overview container">
+            <h6 class=" text-uppercase">fresh & tasty bakery every day</h6>
+            <h1 class=" text-capitalize">The perfect fresh bread</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus fugiat alias fuga officiis.
+            </p>
+
+            <button>Explore our products</button>
+
+        </div>
     </section>
 </template>
 
