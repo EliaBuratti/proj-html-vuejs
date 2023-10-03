@@ -24,15 +24,15 @@ export default {
 
             <!-- our products -->
             <div class="col-12 eb_our-products d-flex justify-content-between">
-                <div class="col-4">
+                <div class="col-5">
                     <h6 class=" text-uppercase">our products</h6>
-                    <h3>all our detectable pastries are backend fresh in our Kitchen very morining,
+                    <h3>All our detectable pastries are backend fresh in our Kitchen very morining,
                         and are made with all-natural, all organic ingrdients.
                     </h3>
 
                     <button class="mt-4">Explore our products</button>
                 </div>
-                <div class="col-7 eb_carousel"> <!-- da rendere dinamico -->
+                <div class="col-6 eb_carousel"> <!-- da rendere dinamico -->
 
                     <div class="eb_prev">&lsaquo;</div>
                     <div class="eb_next">&rsaquo;</div>
@@ -61,6 +61,32 @@ export default {
                         <img :src="getImagePath(picture.img)" :alt="picture.text">
                     </div>
                 </div>
+            </div>
+
+            <!-- find our products -->
+            <div class="col-12 eb_find-products d-flex justify-content-between">
+                <div class="col-3 text-center">
+                    <h3>Find a freshly baked product perfect for you</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus fugiat alias fuga
+                        officiis.
+                    </p>
+
+                    <button class="mt-4">Explore our products</button>
+                </div>
+
+                <div class="col-8 eb_carousel"> <!-- da rendere dinamico -->
+
+                    <div class="eb_prev">&lsaquo;</div>
+                    <div class="eb_next">&rsaquo;</div>
+
+                    <div class="eb_pictures overflow-x-auto d-flex gap-2">
+                        <div v-for="picture in image.products" class="col-3">
+                            <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>

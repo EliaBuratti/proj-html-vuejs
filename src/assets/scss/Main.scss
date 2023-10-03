@@ -13,7 +13,8 @@ $style-color: #55328b;
     margin: 0 5%;
 
     .eb_our-products,
-    .eb_baking {
+    .eb_baking,
+    .eb_find-products {
 
         margin: 6rem 0;
 
@@ -56,6 +57,7 @@ $style-color: #55328b;
 
     .eb_carousel {
         position: relative;
+        height: min-content;
 
         img {
             width: 100%;
