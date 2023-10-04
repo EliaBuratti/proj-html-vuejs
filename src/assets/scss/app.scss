@@ -47,7 +47,7 @@ font-family: 'Roboto Serif', serif;
 
 .eb_btn-full {
     background-color: $style-color;
-    color: $ligth;
+    color: $ligth ;
 
 
     &:hover {
@@ -57,11 +57,11 @@ font-family: 'Roboto Serif', serif;
     }
 
     svg {
-        fill: $style-color;
+        fill: $ligth ;
 
     }
 
     &:hover svg {
-        fill: $ligth;
+        fill: $style-color;
     }
 }

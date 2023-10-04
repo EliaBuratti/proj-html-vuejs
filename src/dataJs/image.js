@@ -64,10 +64,19 @@ export default {
         {
             img: 'corporate-bg.jpg',
             text: 'corporatebg',
+            secondImg: 'corporate-hover-bg.jpg',
+            event: 'international bakery',
+            eventName: 'corporate events',
+            buttonLink: '##',
+
         },
         {
             img: 'wedding-bg.jpg',
             text: 'wedding',
+            secondImg: 'wedding-hover-bg.jpg',
+            event: 'private dining hall',
+            eventName: 'wedding & parties',
+            buttonLink: '##',
         }
 
     ],

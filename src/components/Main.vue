@@ -34,7 +34,7 @@ export default {
 
                     <button class="mt-4 eb_btn-full">Explore our products</button>
                 </div>
-                <div class="col-6 eb_carousel"> <!-- da rendere dinamico -->
+                <div class="col-6 eb_carousel">
 
                     <div class="eb_prev" @click="state.prev('eb_our-products')">&lsaquo;</div>
                     <div class="eb_next" @click="state.next('eb_our-products')">&rsaquo;</div>
@@ -56,7 +56,7 @@ export default {
 
 
             <!-- baking -->
-            <div class="col-12 eb_baking">
+            <div class="col-12 eb_baking overflow-x-auto">
 
                 <!-- title -->
                 <div class="col-12 text-center">
@@ -65,8 +65,21 @@ export default {
                 </div>
 
                 <!-- picture -->
-                <div class="col-12 d-flex gap-2 py-5">
-                    <div v-for="picture in image.baking" class="col-6">
+                <div class="col-12 d-flex gap-2 py-5 eb_carousel">
+                    <div v-for="picture in image.baking" class="col-6 position-relative eb_product">
+                        <div class="eb_overlay d-flex justify-content-center align-items-center">
+                            <img :src="getImagePath(picture.secondImg)" :alt="picture.text">
+                            <div class="position-absolute text-center">
+                                <span class="">
+                                    <h6 class=" text-uppercase text-white">{{ picture.event }}</h6>
+                                    <h3 class=" text-capitalize pt-3 text-white">{{ picture.eventName }}</h3>
+
+                                    <button class="mt-4 eb_btn-full">
+                                        Explore More
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
                         <img :src="getImagePath(picture.img)" :alt="picture.text">
                     </div>
                 </div>
@@ -83,7 +96,7 @@ export default {
                     <button class="mt-4 eb_btn-full">Explore our products</button>
                 </div>
 
-                <div class="col-8 eb_carousel"> <!-- da rendere dinamico -->
+                <div class="col-8 eb_carousel">
 
                     <div class="eb_prev" @click="state.prev('eb_find-products')">&lsaquo;</div>
                     <div class="eb_next" @click="state.next('eb_find-products')">&rsaquo;</div>
