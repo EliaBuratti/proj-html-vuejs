@@ -14,7 +14,8 @@ $style-color: #55328b;
 
     .eb_our-products,
     .eb_baking,
-    .eb_find-products {
+    .eb_find-products,
+    .eb_card-social {
 
         margin: 6rem 0;
 
@@ -48,7 +49,6 @@ $style-color: #55328b;
             transition: 0.4s;
 
             &:hover {
-
                 background-color: $ligth;
                 color: $style-color;
                 border: 1px solid $style-color;
@@ -217,5 +217,35 @@ $style-color: #55328b;
         .eb_yellow {
             background-color: $bg-locator;
         }
+    }
+
+
+    .eb_follow {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .eb_card-social {
+        background-color: $grey;
+
+        button {
+
+
+            svg {
+                fill: $ligth;
+                padding-bottom: 0.2rem;
+                margin-right: 0.3rem;
+                transition: 0.3s;
+
+            }
+
+            &:hover svg {
+                fill: $style-color;
+            }
+
+        }
+
     }
 }
