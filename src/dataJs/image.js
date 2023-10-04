@@ -4,49 +4,58 @@ export default {
         {
             img: 'choco-chip-cookies.jpg',
             text: 'choco chip cookies',
+            categories: 'Cookies, pastries',
             price: '$19.00 - $39.00',
         },
         {
             img: 'blackberry-stuffed-bread.jpg',
             text: 'blackberry stuffed bread',
+            categories: 'Bread, bakery',
             price: '$15.00 - $55.00',
         },
         {
             img: 'cherry-cake.jpg',
             text: 'cherry cake',
+            categories: 'cake, pastries',
             price: '$6.00 - $22.00'
             ,
         },
         {
             img: 'glazed-pancake-with-lemon.jpg',
             text: 'glazed pancake with lemon',
+            categories: 'Glazed pancake, pastries',
             price: '$30.00 - $59.00',
         },
         {
             img: 'cookies-with-ice-cream.jpg',
             text: 'cookies with ice cream',
+            categories: 'Cookies, pastries',
             price: '$40.56 - $60.00',
         },
         {
             img: 'home-bread.jpg',
             text: 'homebread',
+            categories: 'Bread, bakery',
             price: '$7.00 - $24.99'
             ,
         },
         {
             img: 'perfect-macarons.jpg',
             text: 'perfect macarons',
+            categories: 'Cookies, pastries',
             price: '$2.00 - $26.00'
             ,
         },
         {
             img: 'strawberry-donut.jpg',
             text: 'strawberry donut',
+            categories: 'Donut, pastries',
             price: '$18.00 - $69.00',
         },
         {
             img: 'strawberry-jam-cookies.jpg',
             text: 'strawberry jam cookies',
+            categories: 'Cookies, pastries',
             price: '$12.00 - $39.76',
         },
     ],

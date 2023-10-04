@@ -1,11 +1,13 @@
 <script>
 import image from '../dataJs/image.js';
+import state from '../dataJs/state';
 export default {
     name: 'Main',
 
     data() {
         return {
             image,
+            state,
         }
     },
 
@@ -34,11 +36,18 @@ export default {
                 </div>
                 <div class="col-6 eb_carousel"> <!-- da rendere dinamico -->
 
-                    <div class="eb_prev">&lsaquo;</div>
-                    <div class="eb_next">&rsaquo;</div>
+                    <div class="eb_prev" @click="state.scroll">&lsaquo;</div>
+                    <div class="eb_next" @click="state.scroll">&rsaquo;</div>
 
                     <div class="eb_pictures overflow-x-auto d-flex gap-2">
-                        <div v-for="picture in image.products" class="col-6">
+                        <div v-for="picture in image.products" class="col-6 position-relative eb_product">
+                            <div class="eb_overlay d-flex justify-content-center align-items-center">
+                                <div class="eb_more-info">
+                                    <h4>{{ picture.text }}</h4>
+                                    <p>{{ picture.categories }}</p>
+                                    <p>{{ picture.price }}</p>
+                                </div>
+                            </div>
                             <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
                         </div>
                     </div>
