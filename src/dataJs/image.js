@@ -78,5 +78,6 @@ export default {
             working_time: '9:00 AM - 6:00 PM',
             location: 'https://www.google.com/maps/place/6+The+Broadway,+London,+Regno+Unito/@51.5784392,-0.1261125,17z/data=!3m1!4b1!4m6!3m5!1s0x48761bc0acb87de3:0xc5daed5f8a8dec0c!8m2!3d51.5784392!4d-0.1235376!16s%2Fg%2F11c3rs_jyd?entry=ttu',
         },
-    ]
+    ],
+
 } 

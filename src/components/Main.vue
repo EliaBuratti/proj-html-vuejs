@@ -204,7 +204,6 @@ export default {
             </div>
 
             <!-- visit our baking -->
-            <!-- manca lo sfondooooooooooo****************************************************** -->
             <div class="col-12 eb_baking eb_store">
 
                 <!-- title -->
@@ -215,10 +214,11 @@ export default {
 
                 <!-- picture -->
                 <div class="col-12 d-flex py-5">
-                    <div v-for="picture in image.bakery_store" class="col-6">
+                    <div v-for="(picture, i) in image.bakery_store" class="col-6">
                         <img :src="getImagePath(picture.img)" :alt="picture.text">
 
-                        <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5">
+                        <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5"
+                            :class="(i + 1) % 2 === 1 ? 'eb_grey' : 'eb_yellow'">
                             <h3 class="col-12 pb-4">{{ picture.title }}</h3>
                             <span class="col-4 text-uppercase">
                                 <h5>call us</h5>
@@ -238,6 +238,10 @@ export default {
                     </div>
                 </div>
             </div>
+
+
+            <!-- follow on social -->
+
 
         </div>
     </div>

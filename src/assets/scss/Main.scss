@@ -209,5 +209,13 @@ $style-color: #55328b;
                 color: $ligth;
             }
         }
+
+        .eb_grey {
+            background-color: $grey;
+        }
+
+        .eb_yellow {
+            background-color: $bg-locator;
+        }
     }
 }
