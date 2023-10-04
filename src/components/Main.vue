@@ -88,11 +88,29 @@ export default {
                     <div class="eb_prev" @click="state.prev('eb_find-products')">&lsaquo;</div>
                     <div class="eb_next" @click="state.next('eb_find-products')">&rsaquo;</div>
 
-                    <div class="eb_pictures overflow-hidden d-flex gap-2">
-                        <div v-for="picture in image.products" class="col-3 h-100 text-center eb_product">
-                            <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
-                            <h4>{{ picture.text }}</h4>
-                            <p>{{ picture.price }}</p>
+                    <div class="eb_pictures overflow-hidden d-flex flex-wrap">
+
+                        <div class="col-12 d-flex gap-2">
+                            <div v-for="picture in image.products"
+                                class="col-3 h-100 text-center eb_product position-relative">
+                                <div class="eb_overlay d-flex justify-content-center align-items-center">
+                                    <div class="eb_more-info">
+                                        <a href="##" class=" text-decoration-none">
+                                            <p class=" text-uppercase">select options / quick view</p>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex gap-2">
+                            <div v-for="picture in image.products" class="eb_card-text col-3 h-100 text-center">
+                                <h4>{{ picture.text }}</h4>
+                                <p>{{ picture.price }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
