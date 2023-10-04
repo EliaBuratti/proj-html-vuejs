@@ -30,7 +30,7 @@ export default {
                         and are made with all-natural, all organic ingrdients.
                     </h3>
 
-                    <button class="mt-4">Explore our products</button>
+                    <button class="mt-4 eb_btn-full">Explore our products</button>
                 </div>
                 <div class="col-6 eb_carousel"> <!-- da rendere dinamico -->
 
@@ -71,7 +71,7 @@ export default {
                         officiis.
                     </p>
 
-                    <button class="mt-4">Explore our products</button>
+                    <button class="mt-4 eb_btn-full">Explore our products</button>
                 </div>
 
                 <div class="col-8 eb_carousel"> <!-- da rendere dinamico -->
@@ -230,7 +230,7 @@ export default {
                             </span>
                             <span class="col-4">
                                 <a :href="picture.location" target="_blank">
-                                    <button>Wiew Map</button>
+                                    <button class="eb_btn-empty">Wiew Map</button>
                                 </a>
                             </span>
 
@@ -252,7 +252,7 @@ export default {
                                 <h6 class=" text-uppercase">made for sharing</h6>
                                 <h3 class=" text-capitalize pt-3">Let's stay in touch</h3>
 
-                                <button class="mt-4">
+                                <button class="mt-4 eb_btn-empty">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
                                         viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                         <path

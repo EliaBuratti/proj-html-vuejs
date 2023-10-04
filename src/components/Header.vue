@@ -93,4 +93,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/Header.scss';
+
+#eb_nav_section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
 </style>

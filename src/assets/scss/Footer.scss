@@ -8,6 +8,21 @@ $grey-dark: #f0edf5;
 $style-color: #55328b;
 */
 
-h1 {
-    background-color: $grey-light;
+.eb_delivery {
+    //part of filter inside Main.vue
+
+    img {
+        width: 100%;
+    }
+}
+
+.eb_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    width: 1.3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: $grey;
 }
