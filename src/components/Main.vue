@@ -36,10 +36,10 @@ export default {
                 </div>
                 <div class="col-6 eb_carousel"> <!-- da rendere dinamico -->
 
-                    <div class="eb_prev" @click="state.scroll">&lsaquo;</div>
-                    <div class="eb_next" @click="state.scroll">&rsaquo;</div>
+                    <div class="eb_prev" @click="state.prev('eb_our-products')">&lsaquo;</div>
+                    <div class="eb_next" @click="state.next('eb_our-products')">&rsaquo;</div>
 
-                    <div class="eb_pictures overflow-x-auto d-flex gap-2">
+                    <div class="eb_pictures overflow-hidden d-flex gap-2">
                         <div v-for="picture in image.products" class="col-6 position-relative eb_product">
                             <div class="eb_overlay d-flex justify-content-center align-items-center">
                                 <div class="eb_more-info">
@@ -85,11 +85,11 @@ export default {
 
                 <div class="col-8 eb_carousel"> <!-- da rendere dinamico -->
 
-                    <div class="eb_prev">&lsaquo;</div>
-                    <div class="eb_next">&rsaquo;</div>
+                    <div class="eb_prev" @click="state.prev('eb_find-products')">&lsaquo;</div>
+                    <div class="eb_next" @click="state.next('eb_find-products')">&rsaquo;</div>
 
-                    <div class="eb_pictures overflow-x-auto d-flex gap-2">
-                        <div v-for="picture in image.products" class="col-3 h-100 text-center">
+                    <div class="eb_pictures overflow-hidden d-flex gap-2">
+                        <div v-for="picture in image.products" class="col-3 h-100 text-center eb_product">
                             <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
                             <h4>{{ picture.text }}</h4>
                             <p>{{ picture.price }}</p>
