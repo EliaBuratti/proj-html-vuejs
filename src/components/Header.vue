@@ -88,6 +88,11 @@ export default {
             <p>On Sale</p>
         </div>
     </div>
+
+    <!-- turn top the page -->
+    <div id="eb_top-page">
+        <a href="#">&lsaquo;</a>
+    </div>
 </template>
 
 
@@ -100,5 +105,6 @@ export default {
     left: 0;
     z-index: 5;
     width: 100%;
+
 }
 </style>

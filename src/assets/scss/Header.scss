@@ -127,3 +127,20 @@ $style-color: #55328b;
 
     }
 }
+
+#eb_top-page {
+    position: fixed;
+    z-index: 999;
+    bottom: 1rem;
+    right: 1rem;
+    transform: rotate(90deg) scale(0.8);
+
+    a {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: $ligth;
+        font-size: 2rem;
+        padding: 0 1.2rem 0.6rem 1.2rem;
+        border-radius: 0.5rem;
+    }
+}
