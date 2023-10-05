@@ -11,17 +11,12 @@ export default {
         }
     },
 
-    methods: {
-        getImagePath(img) {
-            return new URL(`../assets/images/${img}`, import.meta.url).href;
-        }
-    },
-
 }
 </script>
 
 <template>
     <div class="eb_container">
+
         <div class="row">
 
             <!-- our products -->
@@ -48,7 +43,7 @@ export default {
                                     <p>{{ picture.price }}</p>
                                 </div>
                             </div>
-                            <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+                            <img :src="state.getImagePath(picture.img)" :alt="state.getImagePath(picture.text)">
                         </div>
                     </div>
                 </div>
@@ -68,7 +63,7 @@ export default {
                 <div class="col-12 d-flex gap-2 py-5 eb_carousel">
                     <div v-for="picture in image.baking" class="col-6 position-relative eb_product">
                         <div class="eb_overlay d-flex justify-content-center align-items-center">
-                            <img :src="getImagePath(picture.secondImg)" :alt="picture.text">
+                            <img :src="state.getImagePath(picture.secondImg)" :alt="picture.text">
                             <div class="position-absolute text-center">
                                 <span class="">
                                     <h6 class=" text-uppercase text-white">{{ picture.event }}</h6>
@@ -80,7 +75,7 @@ export default {
                                 </span>
                             </div>
                         </div>
-                        <img :src="getImagePath(picture.img)" :alt="picture.text">
+                        <img :src="state.getImagePath(picture.img)" :alt="picture.text">
                     </div>
                 </div>
             </div>
@@ -114,7 +109,7 @@ export default {
 
                                     </div>
                                 </div>
-                                <img :src="getImagePath(picture.img)" :alt="getImagePath(picture.text)">
+                                <img :src="state.getImagePath(picture.img)" :alt="state.getImagePath(picture.text)">
 
                             </div>
                         </div>
@@ -137,7 +132,7 @@ export default {
 
                     <!-- picture -->
                     <div class="eb_picture">
-                        <img :src="getImagePath('bakery-process-1.jpg')" alt="baking">
+                        <img :src="state.getImagePath('bakery-process-1.jpg')" alt="baking">
                     </div>
 
                     <!-- process and description -->
@@ -168,7 +163,7 @@ export default {
 
                     <!-- picture -->
                     <div class="eb_picture">
-                        <img :src="getImagePath('bakery-process-2.jpg')" alt="baking">
+                        <img :src="state.getImagePath('bakery-process-2.jpg')" alt="baking">
                     </div>
 
                     <!-- process and description -->
@@ -218,7 +213,7 @@ export default {
 
                     <!-- picture -->
                     <div class="eb_picture">
-                        <img :src="getImagePath('bakery-process-3.jpg')" alt="baking">
+                        <img :src="state.getImagePath('bakery-process-3.jpg')" alt="baking">
                     </div>
 
                     <!-- process and description -->
@@ -255,7 +250,7 @@ export default {
                 <!-- picture -->
                 <div class="col-12 d-flex text-center py-5">
                     <div v-for="(picture, i) in image.bakery_store" class="col-6 mx-auto">
-                        <img :src="getImagePath(picture.img)" :alt="picture.text">
+                        <img :src="state.getImagePath(picture.img)" :alt="picture.text">
 
                         <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5"
                             :class="(i + 1) % 2 === 1 ? 'eb_grey' : 'eb_yellow'">
@@ -284,7 +279,7 @@ export default {
             <div class="col-12-d-flex eb_follow">
                 <div class="row h-100">
                     <div class="col-3">
-                        <img :src="getImagePath('social-1.jpg')" alt="ladies">
+                        <img :src="state.getImagePath('social-1.jpg')" alt="ladies">
                     </div>
                     <div class="col-6 ">
                         <div class=" h-100 eb_card-social my-0 d-flex justify-content-center align-items-center">
@@ -305,15 +300,43 @@ export default {
                     </div>
 
                     <div class="col-3">
-                        <img :src="getImagePath('social-2.jpg')" alt="ladies">
+                        <img :src="state.getImagePath('social-2.jpg')" alt="ladies">
                     </div>
 
                     <div v-for="i in 4" class="col-3 mt-4">
-                        <img :src="getImagePath(`social-${i + 2}.jpg`)" :alt="`social ${i + 2}`">
+                        <img :src="state.getImagePath(`social-${i + 2}.jpg`)" :alt="`social ${i + 2}`">
                     </div>
                 </div>
             </div>
 
+        </div>
+    </div>
+    <!-- shop -->
+    <div class="eb_container mx-0 d-flex flex-wrap ">
+        <div class="col-12 eb_delivery d-flex">
+
+            <div class="col-12 position-relative">
+
+                <!-- picture -->
+                <img :src="state.getImagePath('call-to-action-bg.jpg')" alt="baking">
+
+
+                <!-- try seasonal products -->
+                <div class="eb_description position-absolute w-100 h-100 d-flex flex-column justify-content-between">
+
+                    <div class="eb_head-card d-flex align-items-center justify-content-center">
+                        <div class="eb_paragraph container">
+                            <div class="w-50">
+                                <h6 class=" text-uppercase">try our seasonal products</h6>
+                                <h2 class="my-4">Order for pick-up or delivery to your home</h2>
+                                <button class="eb_btn-empty ">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
 </template>

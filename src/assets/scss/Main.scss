@@ -1,15 +1,5 @@
 @use './partials/variable.scss' as *;
 
-/* 
-$ligth: #ffffff;
-$grey-light: #f9f1f2;
-$grey: #f2eef4;
-$grey-dark: #f0edf5;
-$style-color: #55328b;
-*/
-
-/* utilities */
-
 
 .eb_container {
 
@@ -254,5 +244,12 @@ $style-color: #55328b;
 
 
 
+    }
+}
+
+.eb_delivery {
+
+    img {
+        width: 100%;
     }
 }

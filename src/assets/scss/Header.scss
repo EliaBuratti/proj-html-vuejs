@@ -1,20 +1,12 @@
 @use './partials/variable.scss' as *;
 
-/* 
-$ligth: #ffffff;
-$grey-light: #f9f1f2;
-$grey: #f2eef4;
-$grey-dark: #f0edf5;
-$style-color: #55328b;
-*/
-
 #eb_nav_section {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: large;
+    font-size: 1rem;
 
     li {
-        margin: 0.5rem 0.75rem;
+        margin: 0.5rem 0.7rem;
         height: 2rem;
 
         svg {

@@ -40,4 +40,8 @@ export default {
 
         console.log(albumPicture[this.activePicture]);
     },
+
+    getImagePath(img) {
+        return new URL(`../assets/images/${img}`, import.meta.url).href;
+    }
 }

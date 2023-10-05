@@ -1,20 +1,5 @@
 @use './partials/variable.scss' as *;
 
-/* 
-$ligth: #ffffff;
-$grey-light: #f9f1f2;
-$grey: #f2eef4;
-$grey-dark: #f0edf5;
-$style-color: #55328b;
-*/
-
-.eb_delivery {
-    //part of filter inside Main.vue
-
-    img {
-        width: 100%;
-    }
-}
 
 .eb_badge {
     display: flex;
