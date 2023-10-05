@@ -1,31 +1,5 @@
 @use './partials/variable.scss' as *;
 
-#eb_nav_section {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-
-    li {
-        margin: 0.5rem 0.7rem;
-        height: 2rem;
-
-        svg {
-            fill: $style-color;
-        }
-
-        a {
-            color: $style-color;
-            padding: 0;
-            padding-bottom: 0.25rem;
-            transition: 0.15s;
-        }
-
-        a:hover {
-            border-bottom: 3px solid $style-color;
-        }
-    }
-
-}
 
 #eb_jumbotron {
     position: relative;

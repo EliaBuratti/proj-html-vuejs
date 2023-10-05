@@ -2,10 +2,16 @@
 import image from '../dataJs/image.js';
 import navList from '../dataJs/navList';
 import state from '../dataJs/state';
+import NavBar from './NavBar.vue';
+
 
 
 export default {
     name: 'Footer',
+
+    components: {
+        NavBar,
+    },
 
     data() {
         return {
@@ -35,42 +41,8 @@ export default {
                     <img :src="state.getImagePath('avada-bakery-logo-retina-200x97.png')" alt="bakery logo">
                 </a>
 
-                <div id="eb_nav_section">
-                    <nav class="navbar navbar-expand-lg bg-transparent">
-
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarNav">
-
-                            <ul class="navbar-nav">
-
-                                <li v-for="list in navList.footerList">
-
-                                    <a class="nav-link" :href="list.targhet">
-
-                                        <span v-if="list.icon == ''"> {{ list.name }} </span>
-
-                                        <span v-else class="d-flex align-items-center">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
-                                                :viewBox="list.icon.viewbox">
-                                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                                <path :d="list.icon.path" />
-                                            </svg>
-
-                                            <span class="eb_badge">{{ list.item }}</span>
-
-                                        </span>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <div class="eb_nav_section">
+                    <NavBar :navLists="navList.footerList" :logo="false" />
                 </div>
             </div>
 
@@ -125,22 +97,7 @@ export default {
 @use '../assets/scss/Footer.scss';
 @use '../assets/scss/partials/variable.scss' as *;
 
-#eb_nav_section {
 
-
-    li {
-
-        margin: 2rem 3rem 0 0;
-
-        a {
-
-            font-size: 0.8rem;
-            font-weight: 400;
-            text-transform: capitalize;
-        }
-    }
-
-}
 
 h4 {
     font-family: 'Roboto Serif', serif;

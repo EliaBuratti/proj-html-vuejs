@@ -1,10 +1,16 @@
 <script>
 import navList from '../dataJs/navList';
 import state from '../dataJs/state';
+import NavBar from './NavBar.vue';
 
 
 export default {
     name: 'Header',
+
+    components: {
+        NavBar,
+    },
+
     data() {
         return {
             navList,
@@ -18,34 +24,7 @@ export default {
 <template>
     <!-- ********* NAVBAR ********* -->
     <div id="eb_nav_section">
-        <nav class="navbar navbar-expand-lg bg-transparent">
-
-            <div class="container-fluid">
-                <a class="navbar-brand" href="##">
-                    <img :src="state.getImagePath('avada-bakery-logo-retina-200x97.png')" alt="bakery logo">
-                </a>
-
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-end">
-                        <li v-for="list in navList.headList" class="nav-item">
-                            <a class="nav-link" :href="list.targhet">
-                                <span v-if="list.icon == ''"> {{ list.name }} </span>
-
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" height="1.25em" :viewBox="list.icon.viewbox">
-                                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path :d="list.icon.path" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <NavBar :navLists="navList.headList" :logo="true" />
     </div>
 
     <!-- ********* JUBOTRON ********* -->
