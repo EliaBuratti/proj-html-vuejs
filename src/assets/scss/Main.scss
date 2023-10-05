@@ -63,6 +63,13 @@ $style-color: #55328b;
                 font-size: 0.8rem;
             }
         }
+
+        .eb_card-text {
+
+            p {
+                color: $style-color;
+            }
+        }
     }
 
     .eb_carousel {

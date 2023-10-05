@@ -26,16 +26,16 @@ export default {
                             <a class="nav-link" aria-current="page" href="#">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="##">shop</a>
+                            <a class="nav-link" href="#eb_our-products">shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="##">about</a>
+                            <a class="nav-link" href="#eb_baking">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="##">gallery</a>
+                            <a class="nav-link" href="#eb_find-products">gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="##">locations</a>
+                            <a class="nav-link" href="#eb_store">locations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="##">journal</a>

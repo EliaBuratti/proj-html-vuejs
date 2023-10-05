@@ -25,7 +25,7 @@ export default {
         <div class="row">
 
             <!-- our products -->
-            <div class="col-12 eb_our-products d-flex justify-content-between">
+            <div class="col-12 eb_our-products d-flex justify-content-between" id="eb_our-products">
                 <div class="col-5">
                     <h6 class=" text-uppercase">our products</h6>
                     <h3>All our detectable pastries are backend fresh in our Kitchen very morining,
@@ -56,7 +56,7 @@ export default {
 
 
             <!-- baking -->
-            <div class="col-12 eb_baking overflow-x-auto">
+            <div class="col-12 eb_baking overflow-x-auto" id="eb_baking">
 
                 <!-- title -->
                 <div class="col-12 text-center">
@@ -86,7 +86,7 @@ export default {
             </div>
 
             <!-- find our products -->
-            <div class="col-12 eb_find-products d-flex justify-content-between">
+            <div class="col-12 eb_find-products d-flex justify-content-between" id="eb_find-products">
                 <div class="col-3 text-center">
                     <h3>Find a freshly baked product perfect for you</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus fugiat alias fuga
@@ -244,7 +244,7 @@ export default {
             </div>
 
             <!-- visit our baking -->
-            <div class="col-12 eb_baking eb_store">
+            <div class="col-12 eb_baking eb_store overflow-x-auto" id="eb_store">
 
                 <!-- title -->
                 <div class="col-12 text-center">
@@ -253,8 +253,8 @@ export default {
                 </div>
 
                 <!-- picture -->
-                <div class="col-12 d-flex py-5">
-                    <div v-for="(picture, i) in image.bakery_store" class="col-6">
+                <div class="col-12 d-flex text-center py-5">
+                    <div v-for="(picture, i) in image.bakery_store" class="col-6 mx-auto">
                         <img :src="getImagePath(picture.img)" :alt="picture.text">
 
                         <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5"

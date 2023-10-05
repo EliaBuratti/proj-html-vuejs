@@ -51,6 +51,18 @@ $style-color: #55328b;
 
         svg {
             fill: $style-color;
+            width: 1.2rem;
+            height: 1.2rem;
+            transition: 0.3s;
+
         }
+
+        &:hover svg {
+            box-shadow: 0px 0px 8px 9px $style-color;
+            fill: $ligth;
+            background: $style-color;
+            border-radius: 50%;
+        }
+
     }
 }
