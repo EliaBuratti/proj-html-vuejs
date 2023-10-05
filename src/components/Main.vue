@@ -19,8 +19,9 @@ export default {
 
         <div class="row">
 
-            <!-- our products -->
+            <!-- ********* OUR PRODUCTS ********* -->
             <div class="col-12 eb_our-products d-flex justify-content-between" id="eb_our-products">
+
                 <div class="col-5">
                     <h6 class=" text-uppercase">our products</h6>
                     <h3>All our detectable pastries are backend fresh in our Kitchen very morining,
@@ -50,7 +51,7 @@ export default {
             </div>
 
 
-            <!-- baking -->
+            <!-- ********* BAKING ********* -->
             <div class="col-12 eb_baking overflow-x-auto" id="eb_baking">
 
                 <!-- title -->
@@ -62,8 +63,11 @@ export default {
                 <!-- picture -->
                 <div class="col-12 d-flex gap-2 py-5 eb_carousel">
                     <div v-for="picture in image.baking" class="col-6 position-relative eb_product">
+
                         <div class="eb_overlay d-flex justify-content-center align-items-center">
+
                             <img :src="state.getImagePath(picture.secondImg)" :alt="picture.text">
+
                             <div class="position-absolute text-center">
                                 <span class="">
                                     <h6 class=" text-uppercase text-white">{{ picture.event }}</h6>
@@ -74,13 +78,17 @@ export default {
                                     </button>
                                 </span>
                             </div>
+
                         </div>
+
                         <img :src="state.getImagePath(picture.img)" :alt="picture.text">
+
                     </div>
                 </div>
+
             </div>
 
-            <!-- find our products -->
+            <!-- ********* FIND OUR PRODUCTS ********* -->
             <div class="col-12 eb_find-products d-flex justify-content-between" id="eb_find-products">
                 <div class="col-3 text-center">
                     <h3>Find a freshly baked product perfect for you</h3>
@@ -103,7 +111,7 @@ export default {
                                 class="col-3 h-100 text-center eb_product position-relative">
                                 <div class="eb_overlay d-flex justify-content-center align-items-center">
                                     <div class="eb_more-info">
-                                        <a href="##" class=" text-decoration-none">
+                                        <a :href="picture.link" class=" text-decoration-none">
                                             <p class=" text-uppercase">select options / quick view</p>
                                         </a>
 
@@ -124,7 +132,9 @@ export default {
                 </div>
             </div>
 
-            <!-- bakery process -->
+
+
+            <!-- ********* BAKERY PROCESS ********* -->
 
             <!-- first -->
             <div class="col-12 eb_bakery-process d-flex" id="one">
@@ -238,7 +248,7 @@ export default {
                 </div>
             </div>
 
-            <!-- visit our baking -->
+            <!-- ********* VISIT OUR BAKING ********* -->
             <div class="col-12 eb_baking eb_store overflow-x-auto" id="eb_store">
 
                 <!-- title -->
@@ -253,7 +263,7 @@ export default {
                         <img :src="state.getImagePath(picture.img)" :alt="picture.text">
 
                         <div class="eb_info-store text-center d-flex align-items-center flex-wrap pt-5"
-                            :class="(i + 1) % 2 === 1 ? 'eb_grey' : 'eb_yellow'">
+                            :class="(i + 1) % 2 === 1 ? 'eb_azure' : 'eb_yellow'">
                             <h3 class="col-12 pb-4">{{ picture.title }}</h3>
                             <span class="col-4 text-uppercase">
                                 <h5>call us</h5>
@@ -275,8 +285,9 @@ export default {
             </div>
 
 
-            <!-- follow on social -->
+            <!-- ********* FOLLOW ON SOCIAL ********* -->
             <div class="col-12-d-flex eb_follow">
+
                 <div class="row h-100">
                     <div class="col-3">
                         <img :src="state.getImagePath('social-1.jpg')" alt="ladies">
@@ -307,11 +318,14 @@ export default {
                         <img :src="state.getImagePath(`social-${i + 2}.jpg`)" :alt="`social ${i + 2}`">
                     </div>
                 </div>
+
             </div>
 
         </div>
     </div>
-    <!-- shop -->
+
+
+    <!-- ********* SHOP ********* -->
     <div class="eb_container mx-0 d-flex flex-wrap ">
         <div class="col-12 eb_delivery d-flex">
 

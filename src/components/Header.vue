@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+    <!-- ********* NAVBAR ********* -->
     <div id="eb_nav_section">
         <nav class="navbar navbar-expand-lg bg-transparent">
 
@@ -47,6 +48,7 @@ export default {
         </nav>
     </div>
 
+    <!-- ********* JUBOTRON ********* -->
     <section id="eb_jumbotron">
         <img :src="state.getImagePath('hero-header-bakery.jpg')" alt="jubotron image">
 
@@ -60,8 +62,11 @@ export default {
         </div>
     </section>
 
+
+
+    <!-- ********* OVERLAP ********* -->
     <div id="offers" class="d-none d-lg-block">
-        <!-- va con position sticky -->
+
         <div id="demos">
             <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem"
                 viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -70,6 +75,7 @@ export default {
             </svg>
             <p>Demos</p>
         </div>
+
         <div id="costs">
             <span class="eb_value">$</span>
             <span class="eb_price">39</span>

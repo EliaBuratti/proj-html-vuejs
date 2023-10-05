@@ -23,13 +23,11 @@ export default {
 </script>
 
 <template>
-    <!-- nav footer and subscribe -->
     <div class="eb_container d-flex flex-wrap justify-content-between">
-
 
         <div class="col-12 d-flex justify-content-between mb-5">
 
-            <!-- navbar with brand -->
+            <!-- ********* NAVBAR WITH BRAND ********* -->
             <div class="col-6">
                 <a class="navbar-brand" href="##">
                     <img :src="state.getImagePath('avada-bakery-logo-retina-200x97.png')" alt="bakery logo">
@@ -75,7 +73,7 @@ export default {
             </div>
 
 
-            <!-- subscribe -->
+            <!-- ********* NEWSLETTER ********* -->
             <div class="col-5 text-end">
                 <h4>Subscribe to our Newsletter</h4>
 
@@ -88,6 +86,8 @@ export default {
         </div>
 
         <div class="col-12 d-flex justify-content-between mb-5">
+
+            <!-- copyright -->
             <div class="col-6">
                 <div class="eb_copyright">
                     <small>
@@ -97,8 +97,9 @@ export default {
                 </div>
             </div>
 
+            <!-- ********* SOCIAL ICON ********* -->
             <div class="col-6">
-                <!-- social icon -->
+
                 <div class="eb_socials text-end">
 
                     <!-- icon -->
