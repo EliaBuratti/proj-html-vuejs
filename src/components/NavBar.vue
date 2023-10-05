@@ -40,12 +40,12 @@ export default {
                             </span>
 
                             <span v-else class="d-flex align-items-center eb_badge">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" :viewBox="list.icon.viewbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" :viewBox="list.icon.viewbox">
                                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                     <path :d="list.icon.path" />
                                 </svg>
 
-                                <span v-if="!logo" class="">{{ list.item }}</span>
+                                <span v-if="!logo">{{ list.item }}</span>
 
                             </span>
                         </a>
@@ -59,6 +59,12 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variable.scss' as *;
+
+.container-fluid {
+    .eb_badge {
+        padding-top: 0.5rem;
+    }
+}
 
 .eb_nav-list-logo {
 
@@ -99,8 +105,6 @@ li {
 }
 
 .eb_badge {
-
-    transform: scale(0.8);
 
     span:last-child {
         display: flex;
