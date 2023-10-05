@@ -29,44 +29,46 @@ export default {
 
             <!-- ********* NAVBAR WITH BRAND ********* -->
             <div class="col-6">
+
+                <!-- brand -->
                 <a class="navbar-brand" href="##">
                     <img :src="state.getImagePath('avada-bakery-logo-retina-200x97.png')" alt="bakery logo">
                 </a>
+
                 <div id="eb_nav_section">
                     <nav class="navbar navbar-expand-lg bg-transparent">
 
-                        <div>
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
 
-                            <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
 
-                                <ul class="navbar-nav">
-                                    <li v-for="list in navList.footerList">
-                                        <a class="nav-link" :href="list.targhet">
-                                            <span v-if="list.icon == ''"> {{ list.name }} </span>
+                                <li v-for="list in navList.footerList">
 
-                                            <span v-else class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
-                                                    :viewBox="list.icon.viewbox">
-                                                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                                    <path :d="list.icon.path" />
-                                                </svg>
+                                    <a class="nav-link" :href="list.targhet">
 
-                                                <span class="eb_badge">{{ list.item }}</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link d-flex align-items-center" href="##">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <span v-if="list.icon == ''"> {{ list.name }} </span>
+
+                                        <span v-else class="d-flex align-items-center">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                :viewBox="list.icon.viewbox">
+                                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path :d="list.icon.path" />
+                                            </svg>
+
+                                            <span class="eb_badge">{{ list.item }}</span>
+
+                                        </span>
+
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </nav>
                 </div>
@@ -79,7 +81,7 @@ export default {
 
                 <!-- email -->
                 <div class="eb_input">
-                    <input type="text" value="" placeholder="Enter email address*">
+                    <input type="text" value="" placeholder="Enter email address*" id="user-mail">
                     <button class="eb_btn-full">Subscribe</button>
                 </div>
             </div>
